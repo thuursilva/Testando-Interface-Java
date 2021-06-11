@@ -15,7 +15,7 @@ public class Conversortemperaturainterface {
         //convertendo valores de string para double
         double Celsius = Double.parseDouble(snCelsius);
         double fahrenheit = ((Celsius*9)/5)+32;
-        DecimalFormat df = new DecimalFormat("##.#");//formatação de um double para não possuir casas decimais
+        DecimalFormat df = new DecimalFormat("##.#");//formatação de um double para possuir apenas uma casa decimal
         
         //criando caixa de diálogo para apresentar ao usuário a conversão realizada
         JOptionPane.showMessageDialog(null,"A temperatura em graus Fahrenheit é: "+df.format(fahrenheit)+"°F", "Conversão realizada!",JOptionPane.PLAIN_MESSAGE);
